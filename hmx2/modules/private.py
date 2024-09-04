@@ -110,8 +110,10 @@ class Private(object):
     allowance = token_instance.functions.allowance(
         self.eth_signer.address, CROSS_MARGIN_HANDLER_ADDRESS).call()
     if allowance < amount_wei:
-      token_instance.functions.approve(
+      tx = token_instance.functions.approve(
           CROSS_MARGIN_HANDLER_ADDRESS, amount_wei).transact({"from": self.eth_signer.address})
+
+      self.eth_provider.eth.wait_for_transaction_receipt(tx)
 
     return self.cross_margin_handler_instance.functions.depositCollateral(
       sub_account_id,
@@ -372,10 +374,10 @@ class Private(object):
     return args
 
   def __add_slippage(self, value: float):
-    return decimal.Decimal(value) * (BPS + 25) / BPS
+    return decimal.Decimal(value) * (BPS + 100) / BPS
 
   def __sub_slippage(self, value: float):
-    return decimal.Decimal(value) * (BPS - 25) / BPS
+    return decimal.Decimal(value) * (BPS - 100) / BPS
 
   def __create_order_batch(self, account: str, sub_account_id: int, orders):
     (cmds, datas) = self.__prepare_batch_input(orders)

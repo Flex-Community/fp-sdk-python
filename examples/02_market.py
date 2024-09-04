@@ -1,7 +1,7 @@
 import os
 import asyncio
 from hmx2.hmx_client import Client
-from hmx2.constants.markets import MARKET_ETH_USD, MARKET_BTC_USD
+from hmx2.constants.markets import BASE_MARKET_ETH_USD, BASE_MARKET_BTC_USD
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,7 +17,7 @@ async def main():
    )
 
   # ETH
-  eth_market_info = client.public.get_market_info(MARKET_ETH_USD)
+  eth_market_info = client.public.get_market_info(BASE_MARKET_ETH_USD)
   print('Market {0}'.format(eth_market_info["market"]))
   print('Price: {0:.4f}'.format(eth_market_info["price"]))
   print('Long: {0:.2f}'.format((eth_market_info["long_size"])))
@@ -40,7 +40,7 @@ async def main():
     (eth_market_info["borrowing_rate"]["1Y"])))
 
   # BTC
-  btc_market_info = client.public.get_market_info(MARKET_BTC_USD)
+  btc_market_info = client.public.get_market_info(BASE_MARKET_BTC_USD)
   print('Market {0}'.format(btc_market_info["market"]))
   print('Price: {0:.4f}'.format(btc_market_info["price"]))
   print('Long: {0:.2f}'.format((btc_market_info["long_size"])))

@@ -37,6 +37,11 @@ COLLATERAL_PYTH = "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724"
 # BLAST_COLLATERAL_USDB = "0x4200000000000000000000000000000000000022"
 # BLAST_COLLATERAL_ETH = "0x4200000000000000000000000000000000000023"
 
+# Base Sepolia
+BASE_SEPOLIA_COLLATERAL_USDC = "0xeed135DFd92845f718AB1341fA6c8a9d3372bd21"
+BASE_SEPOLIA_COLLATERAL_ETH = "0xdA5E521161CfD7c2c3381529511C91710DFc7242"
+BASE_SEPOLIA_COLLATERAL_BTC = "0x97Ebb91EE72A99312dE16dD4De2C8eaeBFd14F57"
+
 # Blast Mainnet
 BLAST_COLLATERAL_ETH = "0x4300000000000000000000000000000000000004"
 BLAST_COLLATERAL_USDB = "0x4300000000000000000000000000000000000003"
@@ -59,6 +64,11 @@ CHAIN_COLLATERAL = {
   81457: [
       BLAST_COLLATERAL_ETH,
       BLAST_COLLATERAL_USDB,
+  ],
+  84532: [
+      BASE_SEPOLIA_COLLATERAL_USDC,
+      BASE_SEPOLIA_COLLATERAL_ETH,
+      BASE_SEPOLIA_COLLATERAL_BTC
   ]}
 
 # ------ Token Profiles ------
@@ -344,6 +354,45 @@ TOKEN_PROFILE = {
           "asset": ASSET_gmETH,
           "decimals": 18
       },
+  },
+  # Base Sepolia
+  84532: {
+      "USDC": {
+          "symbol": "USDC",
+          "address": "0xeed135DFd92845f718AB1341fA6c8a9d3372bd21",
+          "asset": ASSET_USDC,
+          "decimals": 6
+      },
+      "0xeed135DFd92845f718AB1341fA6c8a9d3372bd21": {
+          "symbol": "USDC",
+          "address": "0xeed135DFd92845f718AB1341fA6c8a9d3372bd21",
+          "asset": ASSET_USDC,
+          "decimals": 6
+      },
+      "WETH": {
+          "symbol": "WETH",
+          "address": "0xdA5E521161CfD7c2c3381529511C91710DFc7242",
+          "asset": ASSET_ETH,
+          "decimals": 18
+      },
+      "0xdA5E521161CfD7c2c3381529511C91710DFc7242": {
+          "symbol": "WETH",
+          "address": "0xdA5E521161CfD7c2c3381529511C91710DFc7242",
+          "asset": ASSET_ETH,
+          "decimals": 18
+      },
+      "BTC": {
+          "symbol": "BTC",
+          "address": "0x97Ebb91EE72A99312dE16dD4De2C8eaeBFd14F57",
+          "asset": ASSET_BTC,
+          "decimals": 8
+      },
+      "0x97Ebb91EE72A99312dE16dD4De2C8eaeBFd14F57": {
+          "symbol": "BTC",
+          "address": "0x97Ebb91EE72A99312dE16dD4De2C8eaeBFd14F57",
+          "asset": ASSET_BTC,
+          "decimals": 8
+      }
   },
   81457: {
       "ybUSDB": {

@@ -3,6 +3,7 @@ import math
 from web3 import Web3
 
 MAINNET_ADDRESSES = [42161, 84157]
+BASE_ADDRESSES = [84532]
 BLAST_ADDRESSES = [81457, 168587773]
 
 
@@ -41,6 +42,8 @@ def from_e30_to_e8(n: float | int) -> int:
 def is_blast_chain(chain_id: int) -> bool:
   return chain_id in BLAST_ADDRESSES
 
+def is_base_chain(chain_id: int) -> bool:
+  return chain_id in BASE_ADDRESSES
 
 def is_mainnet(chain_id: int) -> bool:
   return chain_id in MAINNET_ADDRESSES

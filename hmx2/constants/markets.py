@@ -162,6 +162,13 @@ BLAST_MARKET_W_USD = 44
 BLAST_MARKET_ENA_USD = 45
 
 
+
+# ------ Market ------
+BASE_MARKET_ETH_USD = 0
+BASE_MARKET_BTC_USD = 1
+
+
+
 DELISTED_MARKET = [
     ARBITRUM_MARKET_AAPL_USD,
     ARBITRUM_MARKET_AMZN_USD,
@@ -679,5 +686,20 @@ BLAST_MARKET_PROFILE = {
     "name": "ENAUSD",
     "asset": ASSET_ENA,
     "display_decimal": 3,
+  },
+}
+
+
+# ------ Market ----
+BASE_MARKET_PROFILE = {
+  BASE_MARKET_ETH_USD: {
+    "name": "ETHUSD",
+    "asset": ASSET_ETH,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_BTC_USD: {
+    "name": "BTCUSD",
+    "asset": ASSET_BTC,
+    "display_decimal": 2,
   },
 }

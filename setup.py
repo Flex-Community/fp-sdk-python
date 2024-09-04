@@ -14,19 +14,19 @@ REQUIREMENTS = [
 ]
 
 setup(
-    name='hmx-v2-python',
+    name='fp-v2-python',
     version='1.3.1',
     packages=find_packages(),
     package_data={
-      'hmx2': ['abis/*.json'],
+      'fp': ['abis/*.json'],
     },
-    description='HMXv2 Python SDK',
+    description='Python SDK Flex Perpetual',
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
-    url='https://github.com/HMXOrg/v2-sdk-python',
-    author='HMXOrg',
+    url='https://github.com/Flex-Community/fp-sdk-python',
+    author='Flex-Community',
     license='MIT',
-    author_email='contact@hmx.org',
+    author_email='marketing@flexdex.finance',
     install_requires=REQUIREMENTS,
     keywords='hmx exchange perp dex defi ethereum eth arbitrum blast',
     classifiers=[

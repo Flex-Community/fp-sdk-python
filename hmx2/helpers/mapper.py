@@ -1,7 +1,7 @@
-from hmx2.constants.markets import ARBITRUM_MARKET_PROFILE, BLAST_MARKET_PROFILE, DELISTED_MARKET
+from hmx2.constants.markets import ARBITRUM_MARKET_PROFILE, BLAST_MARKET_PROFILE, BASE_MARKET_PROFILE, DELISTED_MARKET
 from hmx2.constants.tokens import TOKEN_PROFILE
 from hmx2.constants.contracts import CONTRACT_ADDRESS
-from hmx2.helpers.util import is_blast_chain
+from hmx2.helpers.util import is_blast_chain, is_base_chain
 
 
 def get_collateral_address_asset_map(chain_id: int):
@@ -23,6 +23,8 @@ def get_token_profile(chain_id: int):
 def get_market_profile(chain_id: int):
   if is_blast_chain(chain_id):
     return BLAST_MARKET_PROFILE
+  if is_base_chain(chain_id):
+    return BASE_MARKET_PROFILE
   return {market: data for market, data in ARBITRUM_MARKET_PROFILE.items() if market not in DELISTED_MARKET}
 
 
