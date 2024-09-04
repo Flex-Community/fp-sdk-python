@@ -1,6 +1,6 @@
 # Python SDK for Flex Perpetual
 
-This library is tested against Python versions 2.7, 3.4, 3.5, 3.9, and 3.11.
+This library is tested against Python versions 3.6, 3.9, and 3.11.
 
 ## Installation
 
