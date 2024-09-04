@@ -1,4 +1,4 @@
-from hmx2 import Client
+from flextrade import Client
 from tests.constants import DEFAULT_KEY
 from tests.constants import DEFAULT_PUBLIC_ADDRESS
 from tests.constants import DEFAULT_CHAIN_ID

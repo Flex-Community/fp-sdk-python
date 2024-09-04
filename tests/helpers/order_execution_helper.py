@@ -1,9 +1,9 @@
 from web3 import Web3
-from hmx2.constants.contracts import (
+from flextrade.constants.contracts import (
   LIMIT_TRADE_HANDLER_ABI_PATH
 )
-from hmx2.helpers.contract_loader import load_contract
-from hmx2.helpers.mapper import get_contract_address
+from flextrade.helpers.contract_loader import load_contract
+from flextrade.helpers.mapper import get_contract_address
 from tests.constants import MARKET_ORDER_EXECUTIONER_ADDRESS
 from tests.constants import ECOPYTH_CALLDATA_BUILDER_ADDRESS
 from tests.constants import get_default_price_data

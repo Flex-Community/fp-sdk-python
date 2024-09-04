@@ -1,7 +1,7 @@
 import os
 import asyncio
-from hmx2.hmx_client import Client
-from hmx2.constants.tokens import BASE_SEPOLIA_COLLATERAL_ETH, BASE_SEPOLIA_COLLATERAL_USDC, BASE_SEPOLIA_COLLATERAL_BTC
+from flextrade.flextrade_client import Client
+from flextrade.constants.tokens import BASE_SEPOLIA_COLLATERAL_ETH, BASE_SEPOLIA_COLLATERAL_USDC, BASE_SEPOLIA_COLLATERAL_BTC
 from dotenv import load_dotenv
 from time import sleep
 
@@ -28,7 +28,7 @@ async def main():
 
   print("# Deposit Collateral")
   client.private.deposit_erc20_collateral(
-    sub_account_id=0, token_address=BASE_SEPOLIA_COLLATERAL_BTC, amount=0.08)
+    sub_account_id=0, token_address=BASE_MARKET_ETH_USD, amount=0.08)
   await asyncio.sleep(5)
   print()
 

@@ -1,9 +1,9 @@
 import os
 import asyncio
-from hmx2.hmx_client import Client
-from hmx2.constants.markets import BASE_MARKET_ETH_USD
-from hmx2.constants.common import ADDRESS_ZERO
-from hmx2.enum import Action
+from flextrade.flextrade_client import Client
+from flextrade.constants.markets import BASE_MARKET_ETH_USD
+from flextrade.constants.common import ADDRESS_ZERO
+from flextrade.enum import Action
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -3,7 +3,7 @@ from eth_keys import keys
 from web3 import Web3, Account
 from web3.middleware.signing import construct_sign_and_send_raw_middleware
 from web3.logs import DISCARD
-from hmx2.constants.contracts import (
+from flextrade.constants.contracts import (
   CROSS_MARGIN_HANDLER_ABI_PATH,
   LIMIT_TRADE_HANDLER_ABI_PATH,
   VAULT_STORAGE_ABI_PATH,
@@ -12,7 +12,7 @@ from hmx2.constants.contracts import (
   ERC20_ABI_PATH,
   CALCULATOR_ABI_PATH
 )
-from hmx2.constants.common import (
+from flextrade.constants.common import (
   ADDRESS_ZERO,
   DAYS,
   MAX_UINT,
@@ -21,26 +21,26 @@ from hmx2.constants.common import (
   MAX_UINT54,
   MINUTES
 )
-from hmx2.constants.intent import (
+from flextrade.constants.intent import (
   INTENT_TRADE_API,
 )
-from hmx2.enum import (
+from flextrade.enum import (
   Cmd,
 )
 from eth_account import Account
 
 from eth_account.messages import encode_typed_data, encode_defunct
 from time import time
-from hmx2.helpers.contract_loader import load_contract
+from flextrade.helpers.contract_loader import load_contract
 from simple_multicall_v6 import Multicall
-from hmx2.helpers.mapper import (
+from flextrade.helpers.mapper import (
   get_contract_address,
   get_token_profile,
   get_collateral_address_asset_map,
   get_collateral_address_list
 )
-from hmx2.helpers.util import check_sub_account_id_param, from_number_to_e30, int_to_byte32
-from hmx2.modules.oracle.oracle_middleware import OracleMiddleware
+from flextrade.helpers.util import check_sub_account_id_param, from_number_to_e30, int_to_byte32
+from flextrade.modules.oracle.oracle_middleware import OracleMiddleware
 from eth_abi.abi import encode
 import decimal
 import math

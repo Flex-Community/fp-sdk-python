@@ -1,5 +1,5 @@
 import os
-from hmx2.constants.assets import (
+from flextrade.constants.assets import (
   ASSET_ETH,
   ASSET_BTC,
   ASSET_AAPL,

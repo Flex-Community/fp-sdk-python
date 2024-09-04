@@ -1,4 +1,4 @@
-from hmx2.constants.common import BIE8, BPS, DAYS
+from flextrade.constants.common import BIE8, BPS, DAYS
 import math
 
 

@@ -1,10 +1,10 @@
-from hmx2.modules.oracle.pyth_oracle import PythOracle
-from hmx2.modules.oracle.glp_oracle import GlpOracle
-from hmx2.modules.oracle.cix_oracle import CixOracle
-from hmx2.modules.oracle.gm_oracle import GmOracle
-from hmx2.modules.oracle.onchain_pricelens_oracle import OnchainPricelensOracle
-from hmx2.modules.oracle.calc_pricelens_oracle import CalcPricelensOracle
-from hmx2.constants.assets import (
+from flextrade.modules.oracle.pyth_oracle import PythOracle
+from flextrade.modules.oracle.glp_oracle import GlpOracle
+from flextrade.modules.oracle.cix_oracle import CixOracle
+from flextrade.modules.oracle.gm_oracle import GmOracle
+from flextrade.modules.oracle.onchain_pricelens_oracle import OnchainPricelensOracle
+from flextrade.modules.oracle.calc_pricelens_oracle import CalcPricelensOracle
+from flextrade.constants.assets import (
   ASSETS,
   ASSET_USDCe,
   ASSET_gmBTC,

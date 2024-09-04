@@ -1,8 +1,8 @@
 from typing import List
 from web3 import Web3
-from hmx2.helpers.contract_loader import load_contract
-from hmx2.modules.oracle.pyth_oracle import PythOracle
-from hmx2.constants.contracts import GM_PRICE_ADAPTER_ABI_PATH
+from flextrade.helpers.contract_loader import load_contract
+from flextrade.modules.oracle.pyth_oracle import PythOracle
+from flextrade.constants.contracts import GM_PRICE_ADAPTER_ABI_PATH
 import math
 
 

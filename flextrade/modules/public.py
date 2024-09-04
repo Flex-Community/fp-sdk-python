@@ -1,5 +1,5 @@
 from web3 import Web3
-from hmx2.constants.contracts import (
+from flextrade.constants.contracts import (
   ADAPTIVE_FEE_CALCULATOR_ABI,
   LIMIT_TRADE_HANDLER_ABI_PATH,
   VAULT_STORAGE_ABI_PATH,
@@ -9,29 +9,29 @@ from hmx2.constants.contracts import (
   CALCULATOR_ABI_PATH,
   ORDERBOOK_ORACLE_ABI
 )
-from hmx2.constants.intent import INTENT_TRADE_API
-from hmx2.constants.markets import (
+from flextrade.constants.intent import INTENT_TRADE_API
+from flextrade.constants.markets import (
     DELISTED_MARKET
 )
-from hmx2.constants.common import (
+from flextrade.constants.common import (
   BPS,
   BYTE_ZERO,
   HOURS,
   DAYS,
   YEARS
 )
-from hmx2.enum import IntentOrderStatus
-from hmx2.helpers.contract_loader import load_contract
-from hmx2.helpers.mapper import (
+from flextrade.enum import IntentOrderStatus
+from flextrade.helpers.contract_loader import load_contract
+from flextrade.helpers.mapper import (
   get_collateral_address_asset_map,
   get_collateral_address_list,
   get_contract_address,
   get_token_profile,
   get_market_profile,
 )
-from hmx2.helpers.util import get_sub_account, is_blast_chain
-from hmx2.modules.oracle.oracle_middleware import OracleMiddleware
-from hmx2.modules.calculator.calculator import Calculator
+from flextrade.helpers.util import get_sub_account, is_blast_chain
+from flextrade.modules.oracle.oracle_middleware import OracleMiddleware
+from flextrade.modules.calculator.calculator import Calculator
 from simple_multicall_v6 import Multicall
 from eth_abi.abi import decode
 from typing import List

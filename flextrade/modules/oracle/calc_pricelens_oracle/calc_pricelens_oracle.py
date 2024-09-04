@@ -1,11 +1,11 @@
 import math
 from web3 import Web3
-from hmx2.constants.common import BIE18, BIE8
-from hmx2.helpers.contract_loader import load_contract
-from hmx2.helpers.util import convert_asset_to_byte32
-from hmx2.modules.oracle.pyth_oracle import PythOracle
-from hmx2.constants.contracts import CALC_PRICELENS_ABI_PATH
-from hmx2.constants.tokens import (
+from flextrade.constants.common import BIE18, BIE8
+from flextrade.helpers.contract_loader import load_contract
+from flextrade.helpers.util import convert_asset_to_byte32
+from flextrade.modules.oracle.pyth_oracle import PythOracle
+from flextrade.constants.contracts import CALC_PRICELENS_ABI_PATH
+from flextrade.constants.tokens import (
   ASSET_ybETH,
   ASSET_ETH,
   ASSET_ybUSDB,

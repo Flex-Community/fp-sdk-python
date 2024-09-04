@@ -1,20 +1,20 @@
 from web3 import Web3, Account
-from hmx2.constants.pricefeed import DEFAULT_PYTH_PRICE_SERVICE_URL
-from hmx2.constants.assets import (
+from flextrade.constants.pricefeed import DEFAULT_PYTH_PRICE_SERVICE_URL
+from flextrade.constants.assets import (
     ASSET_BTC,
     ASSET_ETH,
     ASSET_USDC
 )
-from hmx2.helpers.mapper import get_contract_address
-from hmx2.modules.private import Private
-from hmx2.modules.public import Public
-from hmx2.modules.oracle.pyth_oracle import PythOracle
-from hmx2.modules.oracle.glp_oracle import GlpOracle
-from hmx2.modules.oracle.cix_oracle import CixOracle
-from hmx2.modules.oracle.gm_oracle import GmOracle
-from hmx2.modules.oracle.onchain_pricelens_oracle import OnchainPricelensOracle
-from hmx2.modules.oracle.calc_pricelens_oracle import CalcPricelensOracle
-from hmx2.modules.oracle.oracle_middleware import OracleMiddleware
+from flextrade.helpers.mapper import get_contract_address
+from flextrade.modules.private import Private
+from flextrade.modules.public import Public
+from flextrade.modules.oracle.pyth_oracle import PythOracle
+from flextrade.modules.oracle.glp_oracle import GlpOracle
+from flextrade.modules.oracle.cix_oracle import CixOracle
+from flextrade.modules.oracle.gm_oracle import GmOracle
+from flextrade.modules.oracle.onchain_pricelens_oracle import OnchainPricelensOracle
+from flextrade.modules.oracle.calc_pricelens_oracle import CalcPricelensOracle
+from flextrade.modules.oracle.oracle_middleware import OracleMiddleware
 
 
 class Client(object):

@@ -1,5 +1,5 @@
-from hmx2 import Client
-from hmx2.constants.assets import (
+from flextrade import Client
+from flextrade.constants.assets import (
   ASSET_USDC,
   ASSET_USDT,
   ASSET_DAI,
@@ -7,7 +7,7 @@ from hmx2.constants.assets import (
   ASSET_BTC,
   ASSET_ARB
 )
-from hmx2.helpers.mapper import get_token_profile
+from flextrade.helpers.mapper import get_token_profile
 from tests.constants import DEFAULT_PUBLIC_ADDRESS
 from tests.constants import DEFAULT_KEY
 from tests.constants import DEFAULT_CHAIN_ID

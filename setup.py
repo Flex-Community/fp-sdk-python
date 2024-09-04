@@ -28,7 +28,7 @@ setup(
     license='MIT',
     author_email='marketing@flexdex.finance',
     install_requires=REQUIREMENTS,
-    keywords='hmx exchange perp dex defi ethereum eth arbitrum blast',
+    keywords='flextrade exchange perp dex defi ethereum eth arbitrum blast',
     classifiers=[
       'Intended Audience :: Developers',
       'License :: OSI Approved :: MIT License',

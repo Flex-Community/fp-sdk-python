@@ -1,7 +1,7 @@
-from hmx2.constants.markets import ARBITRUM_MARKET_PROFILE, BLAST_MARKET_PROFILE, BASE_MARKET_PROFILE, DELISTED_MARKET
-from hmx2.constants.tokens import TOKEN_PROFILE
-from hmx2.constants.contracts import CONTRACT_ADDRESS
-from hmx2.helpers.util import is_blast_chain, is_base_chain
+from flextrade.constants.markets import ARBITRUM_MARKET_PROFILE, BLAST_MARKET_PROFILE, BASE_MARKET_PROFILE, DELISTED_MARKET
+from flextrade.constants.tokens import TOKEN_PROFILE
+from flextrade.constants.contracts import CONTRACT_ADDRESS
+from flextrade.helpers.util import is_blast_chain, is_base_chain
 
 
 def get_collateral_address_asset_map(chain_id: int):

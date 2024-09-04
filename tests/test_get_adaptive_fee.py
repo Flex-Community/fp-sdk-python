@@ -6,8 +6,8 @@ from tests.constants import DEFAULT_CHAIN_ID
 from tests.constants import DEFAULT_FORK_BLOCK
 from tests.constants import DEFAULT_PUBLIC_ADDRESS
 from tests.constants import DEFAULT_KEY
-from hmx2.constants.markets import MARKET_SOL_USD
-from hmx2.hmx_client import Client
+from flextrade.constants.markets import MARKET_SOL_USD
+from flextrade.flextrade_client import Client
 import pytest
 
 

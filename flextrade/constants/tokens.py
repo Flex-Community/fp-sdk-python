@@ -1,4 +1,4 @@
-from hmx2.constants.assets import (
+from flextrade.constants.assets import (
   ASSET_ARB,
   ASSET_BTC,
   ASSET_DAI,

@@ -1,5 +1,5 @@
 from typing import List
-from hmx2.constants.pricefeed import (
+from flextrade.constants.pricefeed import (
   PRICE_FEED_IDS,
   GET_LATEST_PRICE_FEEDS_ENDPOINT
 )

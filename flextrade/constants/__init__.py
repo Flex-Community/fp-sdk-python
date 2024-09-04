@@ -1,4 +1,4 @@
-from hmx2.constants import (
+from flextrade.constants import (
   assets,
   common,
   contracts,

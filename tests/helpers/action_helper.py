@@ -1,7 +1,7 @@
 from web3 import Web3, Account
 from web3.middleware import construct_sign_and_send_raw_middleware
-from hmx2.helpers.contract_loader import load_contract
-from hmx2.helpers.mapper import get_token_profile
+from flextrade.helpers.contract_loader import load_contract
+from flextrade.helpers.mapper import get_token_profile
 from tests.constants import UNISWAP_SWAP_ROUTER_02_ADDRESS
 
 

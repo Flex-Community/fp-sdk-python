@@ -1,5 +1,5 @@
 import responses
-from hmx2.constants.pricefeed import (
+from flextrade.constants.pricefeed import (
   PRICE_FEED_IDS,
   DEFAULT_PYTH_PRICE_SERVICE_URL,
   GET_LATEST_PRICE_FEEDS_ENDPOINT
