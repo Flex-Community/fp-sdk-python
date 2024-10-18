@@ -15,10 +15,10 @@ REQUIREMENTS = [
 
 setup(
     name='fp-v2-python',
-    version='1.3.1',
+    version='1.3.2',
     packages=find_packages(),
     package_data={
-      'fp': ['abis/*.json'],
+      'flextrade': ['abis/*.json'],
     },
     description='Python SDK Flex Perpetual',
     long_description=LONG_DESCRIPTION,
