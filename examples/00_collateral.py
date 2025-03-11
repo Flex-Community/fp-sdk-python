@@ -1,7 +1,7 @@
 import os
 import asyncio
 from flextrade.flextrade_client import Client
-from flextrade.constants.tokens import BASE_SEPOLIA_COLLATERAL_ETH, BASE_SEPOLIA_COLLATERAL_USDC, BASE_SEPOLIA_COLLATERAL_BTC
+from flextrade.constants.tokens import BASE_MAINNET_COLLATERAL_ETH, BASE_MAINNET_COLLATERAL_USDC, BASE_MAINNET_COLLATERAL_BTC
 from dotenv import load_dotenv
 from time import sleep
 
@@ -28,7 +28,7 @@ async def main():
 
   print("# Deposit Collateral")
   client.private.deposit_erc20_collateral(
-    sub_account_id=0, token_address=BASE_MARKET_ETH_USD, amount=0.08)
+    sub_account_id=0, token_address=BASE_MAINNET_COLLATERAL_ETH, amount=0.08)
   await asyncio.sleep(5)
   print()
 
@@ -41,7 +41,7 @@ async def main():
   print("# Withdraw Collateral")
   # # Withdraw ERC20 as collateral. This function will automatically
   client.private.withdraw_collateral(
-    sub_account_id=0, token_address=BASE_SEPOLIA_COLLATERAL_BTC, amount=0.1)
+    sub_account_id=0, token_address=BASE_MAINNET_COLLATERAL_ETH, amount=0.1)
   await asyncio.sleep(8)
 
   print("# Collateral info")
@@ -63,7 +63,7 @@ async def main():
   # Deposit ERC20 as collateral. This function will automatically
   # approve CrossMarginHandler if needed.
   client.private.deposit_erc20_collateral(
-    sub_account_id=0, token_address=BASE_SEPOLIA_COLLATERAL_USDC, amount=0.01)
+    sub_account_id=0, token_address=BASE_MAINNET_COLLATERAL_USDC, amount=0.01)
 
   await asyncio.sleep(5)
 
@@ -75,7 +75,7 @@ async def main():
   # Withdraw ETH as collateral
   # Can wrap if wanted
   client.private.withdraw_collateral(
-    sub_account_id=0, token_address=BASE_SEPOLIA_COLLATERAL_ETH, amount=0.1, wrap=False)
+    sub_account_id=0, token_address=BASE_MAINNET_COLLATERAL_ETH, amount=0.1, wrap=False)
 
   await asyncio.sleep(5)
 
@@ -86,7 +86,7 @@ async def main():
 
   # Withdraw ERC20 as collateral. This function will automatically
   client.private.withdraw_collateral(
-    sub_account_id=0, token_address=BASE_SEPOLIA_COLLATERAL_USDC, amount=0.01)
+    sub_account_id=0, token_address=BASE_MAINNET_COLLATERAL_USDC, amount=0.01)
 
   print("# Collateral info")
   collaterial =  client.public.get_collaterals(ACCOUNT, sub_account_id=0)

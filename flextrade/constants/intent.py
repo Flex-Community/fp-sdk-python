@@ -1,1 +1,1 @@
-INTENT_TRADE_API = "https://sepolia-base-gapi.flex.trade/"
+INTENT_TRADE_API = "https://gapi.flex.trade"

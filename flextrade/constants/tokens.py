@@ -42,6 +42,11 @@ BASE_SEPOLIA_COLLATERAL_USDC = "0xeed135DFd92845f718AB1341fA6c8a9d3372bd21"
 BASE_SEPOLIA_COLLATERAL_ETH = "0xdA5E521161CfD7c2c3381529511C91710DFc7242"
 BASE_SEPOLIA_COLLATERAL_BTC = "0x97Ebb91EE72A99312dE16dD4De2C8eaeBFd14F57"
 
+# Base Mainnet
+BASE_MAINNET_COLLATERAL_USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+BASE_MAINNET_COLLATERAL_ETH = "0x4200000000000000000000000000000000000006"
+BASE_MAINNET_COLLATERAL_BTC = "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
+
 # Blast Mainnet
 BLAST_COLLATERAL_ETH = "0x4300000000000000000000000000000000000004"
 BLAST_COLLATERAL_USDB = "0x4300000000000000000000000000000000000003"
@@ -69,7 +74,13 @@ CHAIN_COLLATERAL = {
       BASE_SEPOLIA_COLLATERAL_USDC,
       BASE_SEPOLIA_COLLATERAL_ETH,
       BASE_SEPOLIA_COLLATERAL_BTC
-  ]}
+  ],
+  8453: [
+      BASE_MAINNET_COLLATERAL_USDC,
+      BASE_MAINNET_COLLATERAL_ETH,
+      BASE_MAINNET_COLLATERAL_BTC
+  ]
+}
 
 # ------ Token Profiles ------
 TOKEN_PROFILE = {
@@ -439,10 +450,48 @@ TOKEN_PROFILE = {
       },
       "0x4300000000000000000000000000000000000004": {
           "symbol": "WETH",
-          "address": "0x4300000000000000000000000000000000000004",
+          "address": "0x4200000000000000000000000000000000000006",
           "asset": ASSET_ETH,
           "decimals": 18
       },
+  },
+  8453: {
+      "USDC": {
+          "symbol": "USDC",
+          "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "asset": ASSET_USDC,
+          "decimals": 6
+      },
+      "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+          "symbol": "USDC",
+          "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "asset": ASSET_USDC,
+          "decimals": 6
+      },
+      "WETH": {
+          "symbol": "WETH",
+          "address": "0x4200000000000000000000000000000000000006",
+          "asset": ASSET_ETH,
+          "decimals": 18
+      },
+      "0x4200000000000000000000000000000000000006": {
+          "symbol": "WETH",
+          "address": "0x4200000000000000000000000000000000000006",
+          "asset": ASSET_ETH,
+          "decimals": 18
+      },
+      "BTC": {
+          "symbol": "BTC",
+          "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+          "asset": ASSET_BTC,
+          "decimals": 8
+      },
+      "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf": {
+          "symbol": "BTC",
+          "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+          "asset": ASSET_BTC,
+          "decimals": 8
+      }
   },
   168587773: {
       "ybUSDB": {
