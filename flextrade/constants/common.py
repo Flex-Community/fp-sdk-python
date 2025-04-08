@@ -7,7 +7,7 @@ MAX_UINT = 2 ** 256 - 1
 MAX_UINT54 = (2 ** 53) * (10 ** 22)
 BPS = 10000
 
-EXECUTION_FEE = 1 * 10 ** 15
+EXECUTION_FEE = 3 * 10 ** 13
 
 BIE8 = 10 ** 8
 BIE12 = 10 ** 12
