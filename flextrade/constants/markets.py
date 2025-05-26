@@ -53,6 +53,14 @@ from flextrade.constants.assets import (
   ASSET_PENDLE,
   ASSET_W,
   ASSET_ENA,
+  ASSET_SHIB,
+  ASSET_PEPE,
+  ASSET_AAVE,
+  ASSET_HBAR,
+  ASSET_VIRTUAL,
+  ASSET_TRX,
+  ASSET_UNI,
+  ASSET_TON,
 )
 
 
@@ -166,8 +174,26 @@ BLAST_MARKET_ENA_USD = 45
 # ------ Market ------
 BASE_MARKET_ETH_USD = 0
 BASE_MARKET_BTC_USD = 1
-
-
+BASE_MARKET_SOL_USD = 2
+BASE_MARKET_XRP_USD = 3
+BASE_MARKET_BNB_USD = 4
+BASE_MARKET_DOGE_USD = 5
+BASE_MARKET_TRX_USD = 6
+BASE_MARKET_ADA_USD = 7
+BASE_MARKET_TON_USD = 8
+BASE_MARKET_LINK_USD = 9
+BASE_MARKET_VIRTUAL_USD = 10
+BASE_MARKET_AVAX_USD = 11
+BASE_MARKET_HBAR_USD = 12
+BASE_MARKET_SUI_USD = 13
+BASE_MARKET_SHIB_USD = 14
+BASE_MARKET_AAVE_USD = 15
+BASE_MARKET_PENDLE_USD = 16
+BASE_MARKET_UNI_USD = 17
+BASE_MARKET_PEPE_USD = 18
+BASE_MARKET_HYPE_USD = 19
+BASE_MARKET_AERO_USD = 20
+BASE_MARKET_BRETT_USD = 21
 
 DELISTED_MARKET = [
     ARBITRUM_MARKET_AAPL_USD,
@@ -690,7 +716,6 @@ BLAST_MARKET_PROFILE = {
 }
 
 
-# ------ Market ----
 BASE_MARKET_PROFILE = {
   BASE_MARKET_ETH_USD: {
     "name": "ETHUSD",
@@ -701,5 +726,90 @@ BASE_MARKET_PROFILE = {
     "name": "BTCUSD",
     "asset": ASSET_BTC,
     "display_decimal": 2,
+  },
+  BASE_MARKET_BNB_USD: {
+    "name": "BNBUSD",
+    "asset": ASSET_BNB,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_SHIB_USD: {
+    "name": "SHIBUSD",
+    "asset": ASSET_SHIB,
+    "display_decimal": 8,
+  },
+  BASE_MARKET_PEPE_USD: {
+    "name": "PEPEUSD",
+    "asset": ASSET_PEPE,
+    "display_decimal": 8,
+  },
+  BASE_MARKET_SUI_USD: {
+    "name": "SUIUSD",
+    "asset": ASSET_SUI,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_DOGE_USD: {
+    "name": "DOGEUSD",
+    "asset": ASSET_DOGE,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_AAVE_USD: {
+    "name": "AAVEUSD",
+    "asset": ASSET_AAVE,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_HBAR_USD: {
+    "name": "HBARUSD",
+    "asset": ASSET_HBAR,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_VIRTUAL_USD: {
+    "name": "VIRTUALUSD",
+    "asset": ASSET_VIRTUAL,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_ADA_USD: {
+    "name": "ADAUSD",
+    "asset": ASSET_ADA,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_PENDLE_USD: {
+    "name": "PENDLEUSD",
+    "asset": ASSET_PENDLE,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_TRX_USD: {
+    "name": "TRXUSD",
+    "asset": ASSET_TRX,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_AVAX_USD: {
+    "name": "AVAXUSD",
+    "asset": ASSET_AVAX,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_UNI_USD: {
+    "name": "UNIUSD",
+    "asset": ASSET_UNI,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_SOL_USD: {
+    "name": "SOLUSD",
+    "asset": ASSET_SOL,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_LINK_USD: {
+    "name": "LINKUSD",
+    "asset": ASSET_LINK,
+    "display_decimal": 2,
+  },
+  BASE_MARKET_XRP_USD: {
+    "name": "XRPUSD",
+    "asset": ASSET_XRP,
+    "display_decimal": 4,
+  },
+  BASE_MARKET_TON_USD: {
+    "name": "TONUSD",
+    "asset": ASSET_TON,
+    "display_decimal": 4,
   },
 }
